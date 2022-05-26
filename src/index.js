@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// import router
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// wrap <App /> inside of <Router> to enable using router
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Router>
     <App />
+    </Router>
   </React.StrictMode>
 );
 
